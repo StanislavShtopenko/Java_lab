@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="103.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="newCustomer.newCustomerController">
+   <children>
+      <TextField fx:id="lastName" layoutX="14.0" layoutY="14.0" promptText="Фамилия" />
+      <TextField fx:id="firstName" layoutX="168.0" layoutY="14.0" promptText="Имя" />
+      <TextField fx:id="patronymic" layoutX="321.0" layoutY="14.0" promptText="Отчество" />
+      <TextField fx:id="adres" layoutX="14.0" layoutY="44.0" promptText="Адрес" />
+      <TextField fx:id="numberCard" layoutX="168.0" layoutY="44.0" promptText="Номер карты" />
+      <TextField fx:id="balance" layoutX="321.0" layoutY="44.0" promptText="Баланс" />
+      <Button fx:id="addBtn" layoutX="401.0" layoutY="74.0" mnemonicParsing="false" onMouseClicked="#onClickAddBtn" text="Добавить" />
+      <TextField fx:id="yearField" layoutX="14.0" layoutY="74.0" promptText="Год рождения" />
+   </children>
+</AnchorPane>

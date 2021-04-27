@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="506.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="481.0" prefWidth="850.0">
+          <children>
+              <TableView fx:id="table" onKeyPressed="#onTableKeyClick" prefHeight="397.0" prefWidth="850.0" AnchorPane.bottomAnchor="84.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <columns>
+                      <TableColumn id="id" fx:id="id" prefWidth="36.0" text="ID" />
+                      <TableColumn id="lName" fx:id="surname" prefWidth="119.0" text="Surname" />
+                      <TableColumn id="fName" fx:id="name" prefWidth="109.0" text="Name" />
+                      <TableColumn id="patronymic" fx:id="patronymic" prefWidth="115.0" text="Patronymic" />
+                  <TableColumn fx:id="birthYear" prefWidth="84.0" text="Year of birth" />
+                      <TableColumn id="birthday" fx:id="adres" prefWidth="132.0" text="Address" />
+                      <TableColumn id="adres" fx:id="numberCard" prefWidth="173.0" text="Credit card number" />
+                      <TableColumn id="faqult" fx:id="balance" minWidth="0.0" prefWidth="81.0" text="Balance" />
+                  </columns>
+              </TableView>
+              <Button fx:id="newCustomer" layoutX="14.0" layoutY="442.0" mnemonicParsing="false" onMouseClicked="#newCustomerClicked" text="New customer" />
+              <Button fx:id="saveFile" layoutX="753.0" layoutY="442.0" mnemonicParsing="false" onMouseClicked="#saveFileClicked" text="save" />
+              <Button fx:id="openFile" layoutX="696.0" layoutY="442.0" mnemonicParsing="false" onMouseClicked="#loadFileClicked" text="Open" />
+              <Button layoutX="802.0" layoutY="442.0" mnemonicParsing="false" onMouseClicked="#onDelClicked" text="Del" />
+            <Button fx:id="btnReset" layoutX="14.0" layoutY="405.0" mnemonicParsing="false" onMouseClicked="#resetClicked" text="Reset search parameters" />
+          </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="View">
+            <items>
+              <MenuItem fx:id="menuA" mnemonicParsing="false" onAction="#taskAbtn" text="By the name" />
+                  <MenuItem fx:id="menuB" mnemonicParsing="false" onAction="#taskBbtn" text="By credit card range" />
+                  <MenuItem fx:id="menuC" mnemonicParsing="false" onAction="#taskCbtn" text="Debtors" />
+                  <MenuItem fx:id="menuD" mnemonicParsing="false" onAction="#taskDbtn" text="Balance / credit card" />
+                  <MenuItem fx:id="menuE" mnemonicParsing="false" onAction="#taskEbtn" text="All birth years" />
+                  <MenuItem fx:id="menuF" mnemonicParsing="false" onAction="#taskFbtn" text="Richest by year of birth" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>
