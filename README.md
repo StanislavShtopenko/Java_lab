@@ -1,5 +1,5 @@
 # Java_lab
-Java_lab
+Lab 7
 Shtopenko Stnaislav, 2151, 22 вариант
 Варіант 22.
 
